@@ -28,5 +28,4 @@ ln -s build/compile_commands.json compile_commands.json
 **Dependencies**
 
 > [!CAUTION]
-> Distributions of Waybar are only released on the [official GitHub page](https://github.com/Alexays/Waybar).<br/>
-> Waybar does **not** have an official website. Do not trust any sites that claim to be official.
+> This project is created on linux. Windows suport isn't guaranteed. 
