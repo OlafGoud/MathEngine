@@ -1,20 +1,17 @@
 #include <iostream>
 #include <string.h>
 #include <vector>
-#include <unordered_map>
+#include <set>
 
 void tokenize(std::string userInputString);
 std::vector<std::string> stringToTokens(const std::string &userInputString);
+void cleanEquation(std::vector<std::string> &tokenList);
+
 
 bool isNumber(const std::string &str);
 bool isNumber(const char c);
 bool isCharacter(const char c);
-bool isIrrationalNumber(const std::string &str);
-bool isOperator(const std::string &token, std::vector<std::string> operatorList, int checkLimit);
-bool isOperator(const std::string &token, std::vector<std::string> operatorList);
-bool isRightAssociative(const std::string &str); // map
-
 double getNumber(const std::string &str);
-int getOperatorPriority(const std::string &str); // map
 
-bool validateToken(std::string &token, std::vector<std::string> operatorList);
+bool validateToken(const std::string &token, std::vector<std::string> &tokenList, const std::set<std::string> &operatorSet);
+
